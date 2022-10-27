@@ -82,11 +82,12 @@ public class Exemplo03 {
                         opcaoAlterar[0]);
 
                 for (int i = 0; i < lista.size(); i++) {
+
                     if (itemSelecionado.toString().equals(lista.get(i))) {
-                        lista.remove(i);
                         String item = JOptionPane.showInputDialog("Digite novo item");
-                        lista.add(item);
+                        lista.set(i, item);
                     }
+
                 }
             }
         } while (selecionado != 4);
